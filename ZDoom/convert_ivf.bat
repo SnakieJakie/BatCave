@@ -22,7 +22,7 @@ set /p _VideoFinalName=Don't put .IVF at the end of the file!!!!
 :Convert_IVF
 echo Ready to convert. Just waiting for your mark.
 pause
-ffmpeg -i %_OgVideoName% %_VideoFinalName%.ivf 
+ffmpeg -i %_OgVideoName% -an %_VideoFinalName%.ivf 
 echo Done converting the video!
 
 :Done
